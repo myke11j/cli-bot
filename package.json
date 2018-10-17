@@ -1,0 +1,26 @@
+{
+  "name": "maqe-bot-node",
+  "version": "1.0.0",
+  "description": "MAQE Bot via CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "lint": "eslint . --ext js",
+    "lintfix": "eslint --fix --ext js"
+  },
+  "keywords": [
+    "cli",
+    "bot",
+    "maqe"
+  ],
+  "author": "Mukul <@mukul1904>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "eslint": "^4.4.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-chai-friendly": "^0.4.0",
+    "eslint-plugin-import": "^2.7.0"
+  }
+}
