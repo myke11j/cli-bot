@@ -3,7 +3,7 @@
 ## Run the bot
 
 ```
-node index.js <COMMANDA>
+node index.js <COMMAND>
 Eg. node index.js RW15RW1
 ```
 
