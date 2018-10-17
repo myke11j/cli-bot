@@ -8,7 +8,7 @@ const {
     getSteps
 } = require('../utils.js')
 
-describe('Utils methods', function () {
+describe('Utils methods - unit tests', function () {
     describe('getSteps function', function () {
         describe('Success cases', function () {
             it('Invalid Command: AhdWh@W', function () {
