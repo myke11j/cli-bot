@@ -4,7 +4,7 @@
 
 ```
 node index.js <COMMANDA>
-Eg. node index.js W3W3RL
+Eg. node index.js RW15RW1
 ```
 
 ### Test cases

@@ -11,6 +11,7 @@ const origin = {
     y: 0
 };
 
+/* To handle any edge-case, if some function passed unvalid direction */
 const supportedDirections = [
     'North',
     'South',
@@ -18,6 +19,7 @@ const supportedDirections = [
     'West'
 ]
 
+// Constructor
 function Bot(steps) {
     this.position = origin;
     this.direction = 'North'; /* By default bot will be facing North */
@@ -27,10 +29,9 @@ function Bot(steps) {
 Bot.prototype.getCurrentPosition = function () { return this.position };
 
 Bot.prototype.setCurrentPosition = function (position) {
-    const { x, y } = position;
-    /* If x or y are not passed, set current co-ordinate of bot */
-    this.position.x = x || this.position.x;
-    this.position.y = y || this.position.y;
+    const { x = 0, y = 0 } = position; /* If x or y are not passed, set default to 0 */
+    this.position.x += x;
+    this.position.y += y;
 }
 
 Bot.prototype.getDirection = function () { return this.direction };
@@ -71,8 +72,8 @@ Bot.prototype.executeSteps = function () {
 }
 
 /**
- * @desc Find the new direction bot will move in after turning
- * @param {String} currentDirection Possible values: North, south, east, west
+ * @desc Calculates new direction, bot will move in after turning
+ * @param {String} currentDirection Direction in which bot is moving, Possible values: North, south, east, west
  * @param {String} turn Possible values Left or Right
  */
 Bot.prototype.calculateDirection = function (currentDirection, turn) {
@@ -103,7 +104,7 @@ Bot.prototype.calculateDirection = function (currentDirection, turn) {
 /**
  * @desc Calculates new coordinates based on number of steps and current direction
  * @param {Number} N - Number of steps to walk straight
- * @param {String} direction - Direction in which bot is moving
+ * @param {String} direction - Direction in which bot is moving, Possible values: North, south, east, west
  */
 Bot.prototype.moveN = function (N, direction) {
     const coords = {}

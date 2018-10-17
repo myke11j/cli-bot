@@ -22,7 +22,8 @@ const init = () => {
     const newBot = new Bot(steps);
     newBot.executeSteps();
     const currentBotPosition = newBot.getCurrentPosition();
-    console.log(`X: ${currentBotPosition.x}, Y: ${currentBotPosition.y} Direction: ${newBot.getDirection()}`);
+    const direction = newBot.getDirection();
+    console.log(`X: ${currentBotPosition.x}, Y: ${currentBotPosition.y} Direction: ${direction}`);
     process.exit();
 }
 

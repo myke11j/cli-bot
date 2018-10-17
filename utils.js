@@ -12,6 +12,7 @@ const getSteps = (command) => {
     const regex = /([RL]|\w(\d*)\d)/g;
     return command.match(regex);
 }
+
 module.exports = {
     getSteps
 };
