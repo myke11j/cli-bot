@@ -1,8 +1,10 @@
+/* eslint-disable strict */
+
 /**
  * @desc Utils functions
  * Test cases are ion ./test/utils.test.js
  */
-/* eslint-disable strict */
+
 'use strict';
 
 

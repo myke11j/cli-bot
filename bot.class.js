@@ -1,7 +1,7 @@
 /**
- * @desc This is Bot Class. Test cases of following class are present in 
+ * @desc This is Bot Class. Test cases of following class are present in
  * ./test/bot.test.js
- * To avoid setting up babel and for the sake of simplicity in assignment, 
+ * To avoid setting up babel and for the sake of simplicity in assignment,
  * I'm using ES5 way of creating class, i.e, not using 'Class'.
  */
 

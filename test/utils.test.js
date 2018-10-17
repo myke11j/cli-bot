@@ -1,3 +1,5 @@
+/* eslint-disable strict */
+
 'use strict';
 
 const { expect } = require('chai');
@@ -43,4 +45,4 @@ describe('Utils methods', function () {
             })
         })
     })
-})
+});

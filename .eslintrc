@@ -13,6 +13,7 @@
       "linebreak-style": 0,
       "max-len": 1,
       "quote-props": 0,
-      "func-names": 0
+      "func-names": 0,
+      "no-console": 0
     }
   }
